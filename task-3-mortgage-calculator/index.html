@@ -2,6 +2,7 @@
 <head >
     <title>Task 3 Mortgage Calculator</title>
     <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <main class="container">
@@ -34,21 +35,23 @@
           </div>
         </div>
       </div>
-
-      <p>Mortgage Type</p>
-      <div class="radio-group">
-        <label><input type="radio" name="type"> Repayment</label>
-        <label><input type="radio" name="type"> Interest Only</label>
-      </div>
+      
+      <div>
+        <p>Mortgage Type</p>
+        <div class="radio-group">
+          <label><input type="radio" name="type"> Repayment</label>
+          <label><input type="radio" name="type"> Interest Only</label>
+        </div>
+      </div>    
 
       <button class="btn">
-        <span class="icon">📊</span>
+        <i class="fas fa-calculator icon"></i>
         Calculate Repayments
       </button>
     </section>
 
     <section class="results">
-      <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Illustration" />
+      <img src="./design/Screenshot 2025-07-27 213554.png" alt="Illustration" />
       <h2>Results shown here</h2>
       <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
     </section>
