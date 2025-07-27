@@ -4,6 +4,54 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task 3 Mortgage Calculator</h1>
+  <main class="container">
+    <section class="calculator">
+      <div class="calculator-header">
+        <h1>Mortgage Calculator</h1>
+        <a href="#" class="clear-link">Clear All</a>
+      </div>
+
+      <label for="amount">Mortgage Amount</label>
+      <div class="input-prefix">
+        <span>£</span>
+        <input type="number" id="amount" placeholder="0.00" />
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label for="term">Mortgage Term</label>
+          <div class="input-suffix">
+            <input type="number" id="term" />
+            <span>years</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="rate">Interest Rate</label>
+          <div class="input-suffix">
+            <input type="number" id="rate" />
+            <span>%</span>
+          </div>
+        </div>
+      </div>
+
+      <p>Mortgage Type</p>
+      <div class="radio-group">
+        <label><input type="radio" name="type"> Repayment</label>
+        <label><input type="radio" name="type"> Interest Only</label>
+      </div>
+
+      <button class="btn">
+        <span class="icon">📊</span>
+        Calculate Repayments
+      </button>
+    </section>
+
+    <section class="results">
+      <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Illustration" />
+      <h2>Results shown here</h2>
+      <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+    </section>
+  </main>
 </body>
 </html>

@@ -1,3 +1,138 @@
-h1 {
-    color: orange;
+body {
+  background-color: hsl(221, 100%, 96%);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.card-container {
+  width: 43.75rem;              /* 700px */
+  height: 30vh;
+  margin: 20vh auto;
+  background: white;
+  border-radius: 1.25rem;        /* 20px */
+  overflow: hidden;
+  box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.05); /* 15px 30px */
+  display: table;
+}
+
+.result-card, .summary-card {
+  display: table-cell;
+  padding: 2.5rem 1.875rem;      /* 40px 30px */
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.result-card {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  text-align: center;
+  border-radius: 1.25rem;
+}
+
+.result-card h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.09rem;
+  color: hsl(241, 100%, 90%);
+  margin-bottom: 1.5625rem;    
+}
+
+.circle {
+  width: 9.375rem;             
+  height: 9.375rem;
+  margin: 0 auto 1.5625rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: table;
+}
+
+.score {
+  display: block;
+  font-size: 3rem;              
+  font-weight: bold;
+  color: white;
+  padding-top: 2.1875rem;       
+}
+
+.out-of {
+  font-size: 0.875rem;         
+  color: hsl(241, 100%, 89%);
+}
+
+.result-card h3 {
+  font-size: 1.25rem;           
+  margin: 0.9375rem 0 0.625rem; 
+}
+
+.description {
+  font-size: 0.875rem;
+  color: hsl(241, 100%, 89%);
+  line-height: 1.5;
+}
+
+.summary-card h2 {
+  font-size: 1.25rem;
+  color: hsl(224, 30%, 20%);
+  margin-bottom: 1.5625rem;
+}
+
+.item {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 0.75rem;       
+  padding: 0.75rem 1rem;        
+  margin-bottom: 1rem;         
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.item i {
+  margin-right: 0.625rem;      
+}
+
+.reaction {
+  background-color: hsl(0, 100%, 97%);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 95%);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 95%);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsl(234, 100%, 95%);
+  color: hsl(234, 85%, 45%);
+}
+
+.score-text {
+  float: right;
+  color: hsl(224, 36%, 33%);
+  font-weight: bold;
+}
+
+.faint {
+  color: hsl(227, 13%, 72%);
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 0.75rem;            
+  background: linear-gradient(to bottom, hsl(252, 100%, 63%), hsl(241, 81%, 54%));
+  border: none;
+  color: white;
+  font-size: 0.9375rem;         
+  border-radius: 1.875rem;     
+  margin-top: 1.25rem;         
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.continue-btn:hover {
+  opacity: 0.9;
 }

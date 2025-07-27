@@ -1,3 +1,150 @@
-h1 {
-    color: orange;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Layout */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+/* Left Section */
+.left-side {
+  width: 30%;
+  height: 100vh;
+  background-color: #F6F5F5;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.logo img {
+  margin-top: 40px;
+  width: 130px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 0.75rem;
+  color: #0a2a4e;
+  font-weight: bold;
+  z-index: 50;
+}
+
+
+
+/* Right Section */
+.right-side {
+  width: 70%;
+  height: 100vh;
+  background-image: url("./design/universal-earth-vision-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  position: relative;
+}
+
+/* Login Box */
+.login-box {
+  position: absolute;
+  left: -150px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  width: 350px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-header {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: hsl(140, 90%, 40%);
+}
+
+.login-header .icon {
+  font-size: 1.2rem;
+  background-color: #0a2a4e;
+  height: 100%;
+  padding: 10px;
+}
+
+
+.user-login {
+  padding-left: 10px;
+}
+
+/* Form Styling */
+.login-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-body p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-size: 0.85rem;
+  margin: 10px 0 4px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  background: #FFFAEC;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  margin-top: 20px;
+  background-color: hsl(220, 50%, 20%);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(220, 50%, 15%);
+}
+
+.last-div {
+  background-color: #FAFAFE;
+  padding: 10px;
+  border-top: 1px solid hsl(0, 0%, 247%);
 }
