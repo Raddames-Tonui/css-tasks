@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('../Lexend_Deca/LexendDeca-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #092566;
+    font-family: Arial, 'Lexend Deca','Segoe UI', Tahoma,  Verdana, sans-serif;
+    font-weight: 300;
+}
+
+.page-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 60vh;
+    width: 70vw;
+    margin: auto;
+    
+}
+
+@media screen and (max-width: 780px){
+  .page-wrapper{
+        width: 100vw;
+  }  
+}
+
+/* CONTACT INFO */
+.contact-info{
+    padding: 1.25rem;
+    background-color: hsl(217, 38%, 44%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px 0 0 10px;
+}
+
+.contact-info address {
+    font-style: normal;    
+}
+
+
+
+/* FORM CONTAINER */
+.contact-form {
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem;
+    background-color:#F3F3F2 ;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.4rem;
+
+}
+
+.name-email {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    color: #474747;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus
+textarea:focus {
+    outline: none;
+    border-color: #1552DA;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+textarea{
+    height:120px;
+    resize: vertical;
+}
+
+.submit {
+    background-color:#1552DA ;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    border-radius:6px ;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.submit:hover {
+    background-color: #003fcc;
+}
