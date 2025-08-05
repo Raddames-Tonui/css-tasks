@@ -1,9 +1,68 @@
+<!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
+    <meta charset="UTF-8">
     <title>Task Heading</title>
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Task Heading</h1>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <button>Today</button>
+                <button>Back</button>
+                <button>Next</button>
+            </div>
+            
+            <h2>January 2025</h2>
+            <div class="view-toggle">
+                <button class="active">Month</button>
+                <button>Week</button>
+                <button>Day</button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="row days">
+                <div>Sunday</div>
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+                <div>Friday</div>
+                <div>Saturday</div>
+            </div>
+
+            <div class="row">
+                <div class="crossed">29</div>
+                <div class="crossed">30</div>
+                <div class="crossed">31</div>
+                <div>01</div>
+                <div>02</div>
+                <div class="highlight">03</div>
+                <div class="highlight">04</div>
+            </div>
+
+            <div class="row">
+                <div>05</div><div>06</div><div>07</div>
+                <div>08</div><div>09</div><div class="highlight">10</div><div class="highlight">11</div>
+            </div>
+
+            <div class="row">
+                <div>12</div><div>13</div><div>14</div>
+                <div>15</div><div>16</div><div class="highlight">17</div><div class="highlight">18</div>
+            </div>
+
+            <div class="row">
+                <div>19</div><div>20</div><div>21</div>
+                <div>22</div><div>23</div><div class="highlight">24</div><div class="highlight">25</div>
+            </div>
+
+            <div class="row last-row">
+                <div>26</div><div>27</div><div>28</div>
+                <div>29</div><div>30</div><div class="highlight">31</div><div class="highlight">01</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

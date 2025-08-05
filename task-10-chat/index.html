@@ -1,9 +1,297 @@
+<!DOCTYPE html>
 <html lang="en">
-<head >
-    <title>Task Heading</title>
-    <link href="index.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join – Messages</title>
+
+  <!-- Font Awesome (no integrity attr to avoid blocking) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Your styles -->
+  <link href="index.css" rel="stylesheet">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Task Heading</h1>
+  <div class="container">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <div class="logo">
+        <svg class="logosvg" width="56" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M52.496 8.811h-3.054v8.364L43.664 9.32c-.224-.286-.578-.513-.977-.513l-4.26.005v16.722h4.894v-8.345l5.77 7.849c.221.293.587.479.99.479h2.415c1.016 0 1.84-.8 1.84-1.787V10.597c0-.987-.824-1.786-1.84-1.786ZM24.954 17.19c0-1.973-1.655-3.58-3.689-3.58-2.033 0-3.688 1.607-3.688 3.579 0 1.973 1.655 3.578 3.688 3.578 2.034 0 3.69-1.604 3.69-3.578Zm4.907-.007c0 4.603-3.846 8.334-8.592 8.334-4.744 0-8.59-3.731-8.59-8.334s3.846-8.335 8.591-8.335c4.745 0 8.59 3.731 8.59 8.335Zm1.222-13.735v2.962h4.895V1.66h-3.06c-1.017 0-1.835.8-1.835 1.788v-.001Zm0 22.069h4.895V8.828h-4.895v16.688ZM8.4 8.828h3.053v11.938c.002 5.246-4.382 9.5-9.79 9.5v-4.751c2.698 0 4.896-2.13 4.896-4.749V10.62c0-.987.823-1.792 1.84-1.792Z" fill="#1a73e8"></path></svg>
+        </div>
+          <div class="search-container main-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for jobs, candidates, …">
+          </div> 
+      <div class="buttons">
+         <button class="btn-primary">
+        <i class="fas fa-plus"></i> Create new job
+      </button>
+      <div>
+        <i class="fa-solid fa-bell"></i>
+      </div>
+      <div class="profile">
+        <div class="avatar"></div>
+        <span class="username">Julian H.</span>
+        <i class="fas fa-chevron-down chevron"></i>
+      </div>
+      </div>     
+    </header>
+
+    <div class="main-content">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="fintory"> 
+          <div>
+            <img src="./design/fat.png" alt="f">
+          </div>
+          <div><h2>Fintory</h2></div>
+        </div>
+        <ul>
+          <li>
+            <i class="fas fa-home"></i>
+            Dashboard
+          </li>
+          <li>
+            <i class="fas fa-briefcase"></i>
+            Jobs
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            Candidates
+          </li>
+          <li class="active">
+            <i class="fas fa-comment-dots "></i>
+            Messages
+          </li>
+          <li>
+            <i class="fas fa-building"></i>
+            Company
+          </li>
+          <li>
+            <i class="fas fa-cog"></i>
+            Settings
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Messages Panel -->
+      <section class="messages-section">
+        <div class="messages-header">
+          <div class="message-title">
+            <h2>Messages </h2>
+            <div class="badge">25</div>
+          </div>  
+          <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+          </div>        
+          <select>
+            <option>All Messages</option>
+            <option>Applied</option>
+            <option>Archived</option>
+          </select>
+        </div>
+          <ul class="message-list">
+            <li class="unread">
+              <div class="msg-header">
+                <div class="msg-avatar">JH</div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Julian H.</strong>
+                    <span class="msg-time">2h ago</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>UI / UX Designer</span></p>
+                </div>
+              </div>
+              <p>Hi, I have a quick question regarding my application...</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar">RJ</div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Ramona J.</strong>
+                    <span class="msg-time">12h ago</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>UI / UX Designer</span></p>
+                  
+                </div>
+              </div>
+              <p>Hi Ramona, we just reviewed your application...</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="D W."></div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Dominik W.</strong>
+                    <span class="msg-time">2 days ago</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>Teamlead Design</span></p>
+                </div>
+              </div>
+              <p>Hi Dominik, we just reviewed your application...</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="K M."></div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Kevin M.</strong>
+                    <span class="msg-time">2 days ago</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>A very very long position that…</span></p>
+                </div>
+              </div>
+              <p>Good morning, I just wanted to share my design challenge results…</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="R J."></div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Ramona J.</strong>
+                    <span class="msg-time">1 week ago</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>UI / UX Designer</span></p>
+                </div>
+              </div>
+              <p>Hi Ramona, we just reviewed your application...</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="DW."></div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Dominik W.</strong>
+                    <span class="msg-time">08.03.20</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>Teamlead Design</span></p>
+                </div>
+              </div>
+              <p>Hi Dominik, we just reviewed your application...</p>
+            </li>
+
+            <li>
+              <div class="msg-header">
+                <div class="msg-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="KM."></div>
+                <div class="msg-owner">
+                  <div class="msg-owner-name">
+                    <strong>Kevin M.</strong>
+                    <span class="msg-time">04.03.20</span>
+                  </div>
+                  <p class="msg-subject">applied for <span>UI / UX Designer</span></p>
+                </div>
+              </div>
+              <p>Hi Kevin, we just reviewed your application...</p>
+            </li>
+          </ul>
+
+      </section>
+
+      <!-- Conversation View -->
+      <section class="conversation">
+        <div class="conv-header">
+          <div class="conv-info">
+            <h3>Julian Herbst</h3>
+            <p class="msg-subject">applied for <span>UI / UX Designer</span></p>
+          </div>
+          <div class="conv-actions">
+            <button class="btn-outline">View Profile</button>
+            <select>
+              <option>Applied</option>
+              <option>Interview</option>
+              <option>Rejected</option>
+            </select>
+            <button class="icon-btn"><i class="far fa-thumbs-up"></i></button>
+            <button class="icon-btn"><i class="far fa-times"></i></button>
+            <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+          </div>
+        </div>
+
+        <div class="messages-history">
+          <div class="message from-them">
+                      <div class="conv-avatar">JH</div>
+
+            <small class="msg-date">09.03.20</small>
+            <div class="msg-bubble">
+              <strong>Julian Herbst</strong>
+ <p>
+          Hi Lena, I have a quick question regarding my application on the open position_UI / UX Designer*.
+        </p>
+        <p>
+          How long does it usually take for you to review a application? I have some options right now but I would like to consider your company as well but I have no response since I applied. Please just give me a quick message.
+        </p>
+        <p>
+          Thanks and best regards,<br/>
+          Julian Herbst
+        </p>   
+            </div>
+                               <small class="msg-sent">Message sent 1 week ago</small>
+
+          </div>
+          <div class="message from-me">
+            <small class="msg-date">Today</small>
+            <div class="msg-bubble">
+<p>Hi Julian,</p>
+        <p>
+          Sorry for the delayed response but we're currently really busy screening a lot of new candidates. So to answer your question: Usually we need around 1 week to review the applications and I just took a look into yours.
+        </p>
+        <p>
+          We like what we see and would like to send you our Design Challenge – that’s the way we see how qualified you are. The timeframe is a normal working day (~8 hours).
+        </p>
+        <p>
+          Please finish it within the next 7 days. If you have any questions feel free to message me here.
+            </div>
+                    </p>              <small class="msg-sent">Message sent just now</small>
+
+          </div>
+        </div>
+
+<div class="message-box">
+  <input type="text" placeholder="Write your message" />
+
+  <div class="icons-send">
+    <div class="icons">
+      <i class="fa-solid fa-paperclip"></i>
+      <i class="fa-solid fa-bold"></i>
+      <i class="fa-solid fa-italic"></i>
+      <i class="fa-solid fa-list-ul"></i>
+      <i class="fa-solid fa-list-ol"></i>
+      <i class="fa-solid fa-link"></i>
+      <i class="fa-solid fa-unlink"></i>
+    </div>
+
+    <div class="send-box">
+       <div class="icons">
+      <i class="fa-regular fa-face-smile"></i>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+
+    <button class="send-button">
+      Send <i class="fa-solid fa-caret-down"></i>
+    </button>      
+    </div>   
+  </div>
+</div>
+
+
+      </section>
+    </div>
+  </div>
 </body>
 </html>
