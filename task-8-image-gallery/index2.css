@@ -10,7 +10,7 @@ body {
 
 }
 
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: center;
     
@@ -23,7 +23,7 @@ body {
 .navbar > a.active {
     color: red;
     font-weight: bold;
-}
+} */
 
 
 .body-wrapper {

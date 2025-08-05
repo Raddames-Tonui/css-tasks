@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: center;
     
@@ -19,7 +19,7 @@
 .navbar > a.active {
     color: red;
     font-weight: bold;
-}
+} */
 
 
 .page-wrapper {
