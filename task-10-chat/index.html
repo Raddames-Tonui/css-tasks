@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Join – Messages</title>
-
-  <!-- Font Awesome (no integrity attr to avoid blocking) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,12 +11,11 @@
     referrerpolicy="no-referrer"
   />
 
-  <!-- Your styles -->
   <link href="index.css" rel="stylesheet">
 
-  <!-- Inter font -->
   <link rel="preconnect" href="https://fonts.gstatic.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
 </head>
 <body>
   <div class="container">
@@ -33,13 +30,15 @@
           </div> 
       <div class="buttons">
          <button class="btn-primary">
-        <i class="fas fa-plus"></i> Create new job
-      </button>
+            <i class="fas fa-plus"></i> Create new job
+          </button>
       <div>
         <i class="fa-solid fa-bell"></i>
       </div>
       <div class="profile">
-        <div class="avatar"></div>
+        <div class="avatar">
+            <i class="icon fas fa-check-circle"></i>
+        </div>
         <span class="username">Julian H.</span>
         <i class="fas fa-chevron-down chevron"></i>
       </div>
@@ -224,43 +223,52 @@
 
         <div class="messages-history">
           <div class="message from-them">
-            <div class="conv-avatar">JH</div>
             <div class="msg-date">
                 <small >09.03.20</small>
             </div>
-            <div class="msg-bubble">
-              <strong>Julian Herbst</strong>
-              <p>
-                Hi Lena, I have a quick question regarding my application on the open position_UI / UX Designer*.
-              </p>
-              <p>
-                How long does it usually take for you to review a application? I have some options right now but I would like to consider your company as well but I have no response since I applied. Please just give me a quick message.
-              </p>
-              <p>
-                Thanks and best regards,<br />
-                Julian Herbst
-              </p>
-            </div>
-            <small class="msg-sent">Message sent 1 week ago</small>
+            <div class="msg-part">
+                <div class="conv-avatar">JH</div>
+                <div >
+                  <div class="msg-bubble">              
+                    <strong>Julian Herbst</strong>
+                    <p>
+                      Hi Lena, I have a quick question regarding my application on the open position_UI / UX Designer*.
+                    </p>
+                    <p>
+                      How long does it usually take for you to review a application? I have some options right now but I would like to consider your company as well but I have no response since I applied. Please just give me a quick message.
+                    </p>
+                    <p>
+                      Thanks and best regards,<br />
+                      Julian Herbst
+                    </p>
+                  </div>
+                      <small class="msg-sent">Message sent 1 week ago</small>          
+                </div>
+            </div>  
           </div>
 
           <div class="message from-me">
-            <div class="msg-date"> <small >Today</small></div>
-           
-            <div class="msg-bubble">
-              <p>Hi Julian,</p>
-              <p>
-                Sorry for the delayed response but we're currently really busy screening a lot of new candidates. So to answer your question: Usually we need around 1 week to review the applications and I just took a look into yours.
-              </p>
-              <p>
-                We like what we see and would like to send you our Design Challenge – that’s the way we see how qualified you are. The timeframe is a normal working day (~8 hours).
-              </p>
-              <p>
-                Please finish it within the next 7 days. If you have any questions feel free to message me here.
-              </p>
+            <div class="msg-date"> <small >Today</small></div>     
+            <div class="msg-part-2">
+                <div class="msg-bubble-time">
+                  <div class="msg-bubble">              
+                    <p>Hi Julian,</p>
+                    <p>
+                      Sorry for the delayed response but we're currently really busy screening a lot of new candidates. So to answer your question: Usually we need around 1 week to review the applications and I just took a look into yours.
+                    </p>
+                    <p>
+                      We like what we see and would like to send you our Design Challenge – that’s the way we see how qualified you are. The timeframe is a normal working day (~8 hours).
+                    </p>
+                    <p>
+                      Please finish it within the next 7 days. If you have any questions feel free to message me here.
+                    </p>
+                  </div>
+                      <small class="msg-sent">Message sent just now</small>
+                </div>         
+              
+                <div class="msg-avatar conv-avatar"><img class="avatarr" src="./design/avatar.jpg" alt="D W."></div>
             </div>
-            <small class="msg-sent">Message sent just now</small>
-          </div>
+          </div> 
         </div>
 
         <div class="message-box">
@@ -293,5 +301,7 @@
 
     </div>
   </div>
+
+  
 </body>
 </html>

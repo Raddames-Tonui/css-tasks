@@ -1,10 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: center;
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+main {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+}
+
+/* Header styling */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Navigation list */
+nav ul {
+  list-style: none;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+/* Navigation items */
+nav li a {
+  display: block;
+  text-decoration: none;
+  background-color: #3498db;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+}
+
+nav li a:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive tweak */
+@media (max-width: 500px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav li a {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
 }

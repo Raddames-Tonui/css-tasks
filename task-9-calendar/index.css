@@ -7,6 +7,7 @@ body {
     background-color: #f8f9fb;
     margin: 0;
     padding: 2rem;
+    color:#414141 ;
 }
 
 .container {
@@ -26,7 +27,7 @@ body {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .nav button,
@@ -55,8 +56,8 @@ h2 {
 }
 
 .view-toggle .active {
-    background: linear-gradient(to bottom, #c1c1c4, #e6ebf1, #c1c1c4);
-
+    /* background: linear-gradient(to bottom, #c1c1c4, #e6ebf1, #c1c1c4); */
+    background: linear-gradient(to bottom, #CCCCCC, #E5E5E5);
 }
 
 .grid {
@@ -95,8 +96,8 @@ h2 {
     color: #a0a0b0;
     background: repeating-linear-gradient(
         45deg,
-        #f4f5f9,
-        #f4f5f9 0.25rem,
+        #f9fafd,
+        #f3f4f8 0.25rem,
         #f8f9fb 0.25rem,
         #f8f9fb 0.5rem   
     );
